@@ -1,6 +1,5 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
-import {Button} from '@mui/material'
 function Search() {
     const [cocktail, setCocktail] = useState(null);
     const [query, setQuery] = useState("")
