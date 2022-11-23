@@ -1,8 +1,6 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
 
-import { Outlet, Link } from "react-router-dom";
-
 import {Button} from '@mui/material'
 function Home() {
     const [cocktail, setCocktail] = useState(null);
@@ -44,7 +42,7 @@ function Home() {
               <h2>Enter the Ingradient</h2>
               <br/>
               <br/>
-            <input style={BarStyling}  placeholder="Enter Ingradient"  onChange={event => setQuery(event.target.value)}/>
+            <input style={BarStyling} value={query} placeholder="Enter Ingradient"  onChange={event => setQuery(event.target.value)}/>
            
           </label>
         </form>
